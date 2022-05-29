@@ -17,6 +17,7 @@ import getRecipientEmail from "../utils/getRecipientEmail";
 import TimeAgo from "timeago-react";
 import { useRef } from "react";
 
+
 function ChatScreen ({ chat, messages }) {
     const [user] = useAuthState(auth);
     const [input, setInput] = useState('');
@@ -120,7 +121,7 @@ function ChatScreen ({ chat, messages }) {
             </MessageContainer>
             <InputContainer>
             <InsertEmoticonIcon />
-            <Input value={input} onChange={e => setInput(e.target.value)} />
+            <Input placeholder="Type a message" value={input} onChange={e => setInput(e.target.value)} />
             <button hidden disabled={!input} 
             type="submit" 
             onClick={sendMessage}>
@@ -143,10 +144,11 @@ flex: 1;
 outline: 0;
 border: none;
 border-radius: 10px;
-background-color: whitesmoke;
+background-color: white;
 padding: 20px;
 margin-left: 15px;
 margin-right: 15px;
+font-size: 15px;
 `
 
 const InputContainer = styled.form`
@@ -155,13 +157,13 @@ align-items: center;
 padding: 10px;
 position: sticky;
 bottom: 0;
-background-color: white;
+background-color: #F0F2F5;
 z-index: 100;
 `
 
 const Header = styled.div`
 position: sticky;
-background-color: white;
+background-color: #F0F2F5;
 z-index: 100;
 top: 0;
 display: flex;
@@ -196,4 +198,6 @@ const MessageContainer = styled.div`
 padding: 30px;
 background-color: #e5ded8;
 min-height: 90vh;
+
 `
+

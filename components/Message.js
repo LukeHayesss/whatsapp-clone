@@ -33,6 +33,8 @@ min-width: 60px;
 padding-bottom: 26px;
 position: relative;
 text-align: right;
+box-shadow: 0px 4px 2px -3px rgba(0, 0, 0, 0.3);
+
 `
 
 const Sender = styled(MessageElement)`

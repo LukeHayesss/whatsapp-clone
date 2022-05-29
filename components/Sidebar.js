@@ -76,19 +76,22 @@ const SearchInput = styled.input`
 outline-width: 0;
 border: none;
 flex: 1;
+background-color: #F0F2F5;
+border-radius: 5px;
+height: 30px;
 `
 
 const SidebarButton = styled(Button)`
 width: 100%;
 &&& {
-    border-top: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 `
 
 const Container = styled.div`
 flex: 0.45;
-border-right: 1px solid whitesmoke;
+border-right: 1px solid lightgray;
 height: 100vh;
 min-width: 300px;
 max-width: 350px;
@@ -105,7 +108,7 @@ const Header = styled.div`
 display: flex;
 position: sticky;
 top: 0;
-background-color: white;
+background-color: #F0F2F5;
 z-index: 1;
 justify-content: space-between;
 align-items: center;

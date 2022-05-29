@@ -41,7 +41,7 @@ padding: 15px;
 word-break: break-word;
 
 :hover {
-    background-color: #e9eaeb;
+    background-color: #F0F2F5;
 }
 `
 
